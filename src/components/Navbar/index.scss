@@ -1,0 +1,51 @@
+.NavBar {
+    position: relative;
+    height: 50px;
+    background-color: #17B169;
+  }
+  
+  .bar {
+    display: flex; /* Use flexbox */
+    justify-content: space-between; /* Align items to the space between */
+    align-items: center; /* Center vertically */
+  }
+  
+  .links {
+    display: flex; /* Use flexbox for links container */
+  }
+  
+  .about,
+  .skills,
+  .projects,
+  .experience {
+    padding: 15px 20px;
+    margin-right: 10px; 
+    font-family: 'Roboto';
+    font-weight: 700;
+    color: black;
+    &:hover{
+        background-color: #018749;
+    }
+  }
+  
+  .name {
+    padding: 0px 20px;
+    font-family:'Righteous';
+    font-weight: 39;
+    font-size: 30px;
+    color: black;
+    // &:hover{
+        animation: rotate 1s linear;
+    // }
+    @keyframes rotate{
+        0%{
+            transform: rotate(0deg);
+        }
+        50%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+    }
+  }
