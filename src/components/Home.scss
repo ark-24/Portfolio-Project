@@ -1,7 +1,45 @@
-.intro{
-font-size: 100px;
-color:white;
-font-family: 'Roboto Slab';
-padding: 200px 200px 200px 200px;
+.info {
+  margin-top: 30vh;
+  .intro {
+    font-size: 100px;
+    color: white;
+    font-family: 'Roboto Slab';
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    // animation: fadeIn 5s;
+    animation: slide-in 1s;
+    
+  }
+  
+  .aboutMe {
+    font-size: 30px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    color: white;
+    animation: fadeIn 5s;
+  }
 
+  .icons{
+    display: flex;
+    justify-content: center;
+  }
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+
+@keyframes example {
+  from {transform: transition(0,0)}
+  to {transform: transition(3em,0)}
+}
+
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
 }
