@@ -5,6 +5,7 @@ import Home from './components/Home';
 import Navbar from './components/Navbar/Navbar'
 import './components/Navbar/index.scss'
 import ParticlesBackground from './components/Particles/ParticlesBackground';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
 
     <Routes>
     <Route path='/'  element={<Home/>}/>
+    <Route path='/experience'  element={<Experience/>}/>
+
     </Routes>
    </div>
 
