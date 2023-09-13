@@ -23,14 +23,14 @@ const Home = () => {
         />
         <GitHubIcon
           className="ghIcon"
-          onClick={() => window.open('https://github.com/yourgithubusername', '_blank')}
+          onClick={() => window.open('https://github.com/ark-24', '_blank')}
           // color="primary"
           fontSize="large"
         />
          <EmailIcon
-          className="ghIcon"
-          onClick={() => window.open('https://github.com/yourgithubusername', '_blank')}
-          // color="primary"
+          className="mailIcon"
+          onClick={() => window.location = 'mailto:abdulrkhan47@gmail.com'}
+          color="primary"
           fontSize="large"
         />
       </div>

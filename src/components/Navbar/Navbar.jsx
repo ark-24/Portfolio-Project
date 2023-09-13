@@ -9,9 +9,9 @@ const Navbar = () => {
           Abdul Raheem Khan
           </a>
         <div className="links">
-          <Link className="about" to="/about" style={{ textDecoration: 'none' }}>
+          {/* <Link className="about" to="/about" style={{ textDecoration: 'none' }}>
             About Me
-          </Link>
+          </Link> */}
           <NavLink className="experience" to="/experience" style={{ textDecoration: 'none' }}>
             Experience
           </NavLink>

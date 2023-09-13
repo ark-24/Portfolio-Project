@@ -98,10 +98,10 @@ import {
   const Experience = () => {
     return (
       <>
-          <h2 >
-            Work Experience.
+          <h2 style={{ fontFamily: 'Roboto', color: 'white', display:'flex', justifyContent:'center'}}>
+            Work Experience
           </h2>
-  
+          <br></br>
         <div className='mt-20 flex flex-col'>
           <VerticalTimeline>
             {experiences.map((experience, index) => (
