@@ -1,17 +1,19 @@
 .info {
-  // margin-top: 30vh;
   justify-content: center;
   align-items: start;
-  height: 100%; /* Set the maximum height to the viewport height */
+  height: 100%;
   overflow: hidden;
+  margin-top: 30px;
   .intro {
-    margin-top: 300px;
+    margin-bottom: 20vh;
+
+    margin-top: 40px;
     height: 50%;
     font-size: 100px;
     color: white;
     font-family: 'Roboto Slab';
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center; 
     // animation: fadeIn 5s;
     animation: slide-in 1s;
     
@@ -20,9 +22,11 @@
   .aboutMe {
     font-size: 30px;
     display: flex;
-    justify-content: center; /* Center content horizontally */
+    justify-content: center; 
     color: white;
-    animation: fadeIn 5s;
+    animation: fadeIn 7s;
+    text-align: center;
+    // margin-top: 200px;
   }
 
   
@@ -31,7 +35,7 @@
 
 .icons{
   // padding-top: 50px;
-  margin-top: 50px;
+  margin-top: 175px;
   display: flex;
   flex-direction: row; 
   justify-content:space-evenly; 
@@ -39,29 +43,9 @@
   
 
 }
-.liIcon:hover{
-  // background: #ffff;
-  color: #050801;
-  filter: invert(1);
 
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2),
-    0 0 25px rgba(0, 0, 0, 0.2),
-    0 0 50px rgba(0, 0, 0, 0.2),
-    0 0 200px rgba(0, 0, 0, 0.2),
-
-}
-
-.ghIcon:hover{
-  // background: #ffff;
-  color: #050801;
-  filter: invert(1);
-
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2),
-    0 0 25px rgba(0, 0, 0, 0.2),
-    0 0 50px rgba(0, 0, 0, 0.2),
-    0 0 200px rgba(0, 0, 0, 0.2),
-}
-
+.liIcon:hover,
+.ghIcon:hover,
 .mailIcon:hover{
   // background: #ffff;
   color: #050801;

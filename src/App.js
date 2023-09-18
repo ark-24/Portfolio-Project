@@ -6,6 +6,7 @@ import Navbar from './components/Navbar/Navbar'
 import './components/Navbar/index.scss'
 import ParticlesBackground from './components/Particles/ParticlesBackground';
 import Experience from './components/Experience';
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
     <Routes>
     <Route path='/'  element={<Home/>}/>
     <Route path='/experience'  element={<Experience/>}/>
+    <Route path='/skills'  exact element={<Skills/>}/>
 
     </Routes>
    </div>
