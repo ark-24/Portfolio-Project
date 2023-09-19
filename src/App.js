@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter,Route, Routes,  } from 'react-router-dom';
-import Home from './components/Home';
+import Home from './components/Home.tsx';
 import Navbar from './components/Navbar/Navbar'
 import './components/Navbar/index.scss'
 import ParticlesBackground from './components/Particles/ParticlesBackground';
