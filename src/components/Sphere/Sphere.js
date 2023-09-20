@@ -23,7 +23,7 @@ const decal = useTexture(skilled.skilled.logo);
       <ambientLight intensity={0.25} />
       <directionalLight position={[0, 0, 0.05]} />
       <mesh castShadow receiveShadow scale={2.75}>
-        <sphereGeometry attach="geometry" args={[0.7, 30, 30]} />
+        <sphereGeometry attach="geometry" args={[0.9, 30, 30]} />
         <meshStandardMaterial
           color="#ffffff"
           flatShading

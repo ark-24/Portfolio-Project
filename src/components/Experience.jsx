@@ -4,14 +4,17 @@ import {
     VerticalTimelineElement,
   } from "react-vertical-timeline-component";
   import "react-vertical-timeline-component/style.min.css";
+  import Typical from 'react-typical'
+import Tilt from 'react-parallax-tilt';
 
-  import CH  from '../assets/CH.png';
+
+  // import CH  from './CH.png';
   const experiences = [
     {
       title: "Software Engineer Co-op",
       company_name: "Voronoi Health Analytics",
-      icon: CH,
-      iconBg: "#383E56",
+      icon: './Voronoi.png',
+      iconBg: "#ffffff",//"#383E56",
       date: "September - December 2023",
       points: [
         "Developing and maintaining web applications using React.js and other related technologies.",
@@ -23,7 +26,7 @@ import {
     {
       title: "Junior Software Developer Co-op",
       company_name: "Design IT",
-    //   icon: tesla,
+      icon: './DesIT.png',
       iconBg: "#E6DEDD",
       date: "May - December 2022",
       points: [
@@ -37,6 +40,8 @@ import {
       title: "Software QA Engineer Co-op",
       company_name: "Change Healthcare",
     //   icon: shopify,
+    icon: './CH.png',
+
       iconBg: "#383E56",
       date: "January - August 2020",
       points: [
@@ -60,16 +65,17 @@ import {
         date={experience.date}
         iconStyle={{ background: experience.iconBg }}
         icon={
-          <div className='flex justify-center items-center w-full h-full'>
             <img
               src={experience.icon}
               alt={experience.company_name}
-              className='w-[10%] h-[10%] object-contain'
-              style={{width: '30px', height: '30px'}}
+              // className='imgLogo'
+              style={{width: '60px',
+                height: '60px',
+                borderRadius: '50%'}}
             />
-          </div>
         }
       >
+        <Tilt>
         <div>
           <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
           <p
@@ -79,7 +85,6 @@ import {
             {experience.company_name}
           </p>
         </div>
-  
         <ul className='mt-5 list-disc ml-5 space-y-2'>
           {experience.points.map((point, index) => (
             <li
@@ -91,15 +96,18 @@ import {
             </li>
           ))}
         </ul>
+        </Tilt>
+
       </VerticalTimelineElement>
     );
   };
   
   const Experience = () => {
+    const steps = ['Work Experience',2000]
     return (
       <>
-          <h2 style={{ fontFamily: 'Roboto', color: 'white', display:'flex', justifyContent:'center'}}>
-            Work Experience
+          <h2 style={{ fontFamily: 'Roboto', color: 'white', display:'flex',fontSize:'35px', justifyContent:'center'}}>
+            <Typical steps={steps}></Typical>
           </h2>
           <br></br>
         <div className='mt-20 flex flex-col'>

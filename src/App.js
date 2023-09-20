@@ -7,6 +7,7 @@ import './components/Navbar/index.scss'
 import ParticlesBackground from './components/Particles/ParticlesBackground';
 import Experience from './components/Experience';
 import Skills from './components/Skills';
+import Projects from './Projects';
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
     <Route path='/'  element={<Home/>}/>
     <Route path='/experience'  element={<Experience/>}/>
     <Route path='/skills'  exact element={<Skills/>}/>
+    <Route path='/projects'  exact element={<Projects/>}/>
+
 
     </Routes>
    </div>

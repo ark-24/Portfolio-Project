@@ -71,7 +71,7 @@ const Home: React.FC<ModalExampleProps> = ({ fileUrl }) => {
               style={{
                 // border: '1px solid rgba(0, 0, 0, 0.3)',
                 height: '100%',
-                // width: '100%',
+                width: '100%',
                   flexGrow: 1,
                   overflow: 'auto',
             }}
