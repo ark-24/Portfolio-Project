@@ -1,6 +1,6 @@
 import React from 'react';
 import Sphere from './Sphere/Sphere';
-import { skills } from '../assets/skill';
+import { skills } from '../assets/constants';
 import './Skills.scss';
 import Typical from 'react-typical'
 

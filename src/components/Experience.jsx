@@ -7,52 +7,7 @@ import {
   import Typical from 'react-typical'
 import Tilt from 'react-parallax-tilt';
 
-
-  // import CH  from './CH.png';
-  const experiences = [
-    {
-      title: "Software Engineer Co-op",
-      company_name: "Voronoi Health Analytics",
-      icon: './Voronoi.png',
-      iconBg: "#ffffff",//"#383E56",
-      date: "September - December 2023",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Junior Software Developer Co-op",
-      company_name: "Design IT",
-      icon: './DesIT.png',
-      iconBg: "#E6DEDD",
-      date: "May - December 2022",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    {
-      title: "Software QA Engineer Co-op",
-      company_name: "Change Healthcare",
-    //   icon: shopify,
-    icon: './CH.png',
-
-      iconBg: "#383E56",
-      date: "January - August 2020",
-      points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
-      ],
-    },
-    
-  ];
+import { experiences } from '../assets/constants';
 
   const ExperienceCard = ({ experience }) => {
     return (
@@ -75,9 +30,8 @@ import Tilt from 'react-parallax-tilt';
             />
         }
       >
-        <Tilt>
         <div>
-          <h3 className='text-white text-[24px] font-bold'>{experience.title}</h3>
+          <h3 className='text-white text-[24px] font-bold' style={{fontFamily: 'Lato'}}>{experience.title}</h3>
           <p
             className='text-secondary text-[16px] font-semibold'
             style={{ margin: 0 }}
@@ -96,7 +50,6 @@ import Tilt from 'react-parallax-tilt';
             </li>
           ))}
         </ul>
-        </Tilt>
 
       </VerticalTimelineElement>
     );

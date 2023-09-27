@@ -8,21 +8,8 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import Tilt from 'react-parallax-tilt';
+import { projects } from './assets/constants';
 
-const projects = [
-  {
-    projectName: "CashGrab",
-    date: 'March - July 2023',
-    icon: './CashGrab.png',
-    gitLink: 'https://github.com/ark-24/CashGrab---Capstone-Project',
-    tech: 'React, TypeScript, Node.js, ExpressJS, MongoDB, Socket.IO, RaspberryPi',
-    summary: `
-    An intuitive MERN web app tailored for a computer vision-based cash POS system tailored towards retail businesses. CashGrab skillfully implements user registration, seamless login, and easy access to transaction execution/history, income management, 
-    and financial statistics. Additionally, the integration of a resilient bi-directional communication pipeline using Socket.IO enables rapid and secure transaction execution, enhancing efficiency, and improving the user experience in interaction with Raspberry Pi-controlled devices.`
-      
-  },
- 
-];
 const ProjectCard = (props) => {
   const {project} = props
 
@@ -32,7 +19,7 @@ return (
     
           <Card sx={{ maxWidth: 450 }}>
       <CardMedia
-        sx={{ height:'400px',   objectFit: 'cover', }}
+        sx={{ height:'400px'  }}
         image={project.icon}
         // title={project.projectName}
       />
@@ -40,17 +27,24 @@ return (
         <Typography gutterBottom variant="h5" component="div">
         {project.projectName}
         </Typography>
-        <Typography variant="body2" color="text.secondary">
+        <Typography component="div" style={{fontSize:'12px'}}>
+        {project.tech}
+        </Typography>
+        <Typography variant="body2" color="text.secondary" style={{paddingTop:'10px'}}>
           {project.summary}
         </Typography>
       </CardContent>
       <CardActions style={{ justifyContent:'center', }}>
+          {/* <Tilt tiltEnable={false} scale={0.01} transitionSpeed={5000}> */}
+
       <GitHubIcon
             className="gitIcon"
             onClick={() => window.open(project.gitLink, '_blank')}
             // color="primary"
             fontSize="large"
           />
+    {/* </Tilt> */}
+
       </CardActions>
     </Card>
     </>
@@ -58,23 +52,22 @@ return (
 }
 
 const Projects = () => {
-    const steps = ['Projects',2000]
 
   return (
     <>
      <h2 style={{ fontFamily: 'Roboto', color: 'white', display:'flex', fontSize:'35px', justifyContent:'center'}}>
-            <Typical steps={steps}></Typical>
+            <Typical steps={['Projects',2000]}></Typical>
 
           </h2>
-          <Tilt tiltEnable={false} scale={0.01} transitionSpeed={5000}>
+          {/* <Tilt tiltEnable={false} scale={0.01} transitionSpeed={5000}> */}
 
-          <div className='projects'>
-          {projects.map(project => {return(
-            <ProjectCard project={project} />
+
+          <div className='projects' style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center',paddingTop:'10px' }}>
+          {projects.map((project,i) => {return(
+            <ProjectCard project={project} key={i} />
           )})}
     
           </div>
-    </Tilt>
 
     
     </>
