@@ -78,10 +78,9 @@ const skills = [
       iconBg: "#ffffff",
       date: "September - December 2023",
       points: [
-        "Developing and maintaining web applications using React.js and other related technologies.",
-        "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-        "Implementing responsive design and ensuring cross-browser compatibility.",
-        "Participating in code reviews and providing constructive feedback to other developers.",
+        "Developed a PET scan viewer that interfaces with a deep neural network for 3D image processing to facilitate radiologists' workflow by enabling organ cross-sectional analysis",
+        "Created UI and functional enhancements using C++, Qt Framework, Python, and JavaScript",
+        
       ],
     },
     {
@@ -141,7 +140,7 @@ const skills = [
       tech: 'React, TypeScript, JavaScript, HTML, CSS',
       summary: `
       This portfolio website showcases my diverse range of skills, experiences and projects. Through an elegant and user-friendly interface, visitors can explore a curated collection of my work, including web applications, software development projects, and more. The site offers a glimpse into my technical expertise and creativity.
-       It provides valuable insights into my professional journey, demonstrating a passion for innovation and problem-solving. With easy navigation and responsive design, my portfolio website offers a seamless experience for anyone looking to discover my talents and accomplishments.`
+       It provides valuable insights into my professional journey, demonstrating my passion for innovation and problem-solving. With easy navigation and responsive design, my portfolio website offers a seamless experience for anyone looking to discover my talents and accomplishments.`
         
     },
    
